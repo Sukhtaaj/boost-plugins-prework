@@ -1,9 +1,7 @@
 #!/bin/bash
 
 set -ex 
-
-echo "cleanup..."
-rm -f application_parent application_child lib*
+bash cleanup.sh
 
 echo "Compiling now..."
 g++ -std=c++14 -fPIC -c -o libparent_plugin_sum.o  parent_plugin_sum.cpp
