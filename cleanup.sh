@@ -1,6 +1,5 @@
 #!/bin/bash
-set -ex
+set -e
 
-echo "cleanup..." 
-rm -f application_parent application_child lib*
-
+rm -f application_main lib*
+echo "=> cleaned up!" 
